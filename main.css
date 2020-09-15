@@ -1,0 +1,46 @@
+
+
+
+
+
+/* TOP CONTAINER */
+.top-container {
+    background-color: teal;
+}
+#half-circle {
+        height:500px;
+        width:1000px;
+        border-radius: 0 0 600px 600px;
+        background: black;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.display-4{
+    z-index: 9;
+}
+
+.embed-responsive-item{
+    margin: auto;
+    display: block;
+}
+
+/* DIVIDER ONE*/
+.divider-one {
+    height:3rem;
+    width: 100vw;
+    background: tomato;
+}
+
+/* ABOUT ME */
+
+
+/* DIVIDER TWO*/
+
+
+/* FOOTER */
+
+.list-group-item {
+    background-color: transparent;
+    color:green;
+}
