@@ -1,102 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaron Larsen's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron Larsen's Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+
 
 </head>
+<!-- WORK ON CLICK HERE FOR SLIDER BEFORE, TEXT BELOW ICONS IN ABOUT ME, FIRE$BASE DEPLOY, VIDEO INTRO, REPLS, TESTDOME TEST -->
 <body>
+  <!-- WRAPPER DIV -->
+  <div class="wrapper">
     <!-- TOP CONTAINER -->
     <div class="top-container">
-        <div id = "half-circle">
-            <iframe class="embed-responsive-item" src="https://youtu.be/4_2Dgn-CgYw" height="300px" width="500px"></iframe>
-            <h1 class="display-4">Aaron Larsen</h1>
-        </div>
-       
+
+      <!-- HALF CIRCLE CONTAINER -->
+      
+      <div id="half-circle">
+      
+        <!-- BUTTON VIDEO BUTTON ROW -->
+        <section class="b-v-b">
+          <a href="#about-me-container" color="black" style="text-decoration: none;">
+            <div class="about-me-button">
+              <p class="top-buttons">About</p>
+            </div>
+          </a>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-5GirZe_jY" frameborder="1"
+            allowfullscreen height="350px" width="650px"></iframe>
+          <a href="#projects" style="text-decoration: none;">
+            <div class="projects-button">
+              <p class="top-buttons">Projects</p>
+            </div>
+          </a>
+        </section>
+      
+        <!-- BUTTON SPACER BUTTON ROW-->
+      
+        <section class="b-b">
+          <a href="#contacts" style="text-decoration: none;">
+            <div class="links-button">
+              <p class="top-buttons">Links</p>
+            </div>
+          </a>
+          <div class="spacer-one"></div>
+          <a href="#contacts" style="text-decoration: none;">
+          <div class="contact-me-button">
+              <p class="top-buttons">Contact</p>
+          </div>
+          </a>
+        </section>
+      
+      </div>
+      <h1 class="display-4" id="aaron-larsen">Aaron Larsen's Portfolio</h1>
+    </div>
+
+    <!-- ABOUT ME -->
+      <div class="container-fluid" id="about-me-container">
+          <label class="switch">
+          <input type="checkbox">
+          <span class="slider round">
+          
+            <div class="media-body">
+          
+              <h2 class="mt-0">About me!</h2>
+              <p class="about-text">My background is in Television Production and Engineering so becoming a coder has been a
+                welcome change for me. Seeing how multiple elements and roles come together to make a polished end product has
+                been part of my work environment since college.
+              </p>
+              <h3 class="mt-0">Other Interests:</h3>
+              <p class="about-text">
+                These are things I use to relax and unwind after a busy day to keep a clear head.
+                <!-- INSERT FUN ICONS HERE EX PIANO, GAMES AND MORE! -->
+              </p>
+              <p class="icons">
+                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-controller" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                  <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                  <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                </svg>
+                Video Games
+                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-music-note-beamed" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                  <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                  <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                </svg>
+                Music
+                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/>
+                </svg>
+                Cycling
+                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-speaker-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-2.5 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/>
+                  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm6 4a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 7a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>
+                </svg>
+                Live Music
+                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg>
+                Thrift Store Hunting
+              </p>
+            </div>
+          </span>
+          </label>
+              <!-- <div class="media" id="demo">
+                <img src="assets/headshot.jpg" class="mr-3" alt="...">
+                  
+                <div class="media-body">
+              
+                  <h2 class="mt-0">About me!</h2>
+                  <p class="about-text">My background is in Television Production and Engineering so becoming a coder has been a welcmome change for me. Seeing how multiple elements and roles come together to make a polished end product has been part of my work environment since college.
+                  </p>
+                  <h3 class="mt-0">Other Interests:</h3>
+                  <p class="about-text">
+                    These are things I use to relax and unwind after a busy day to keep a clear head.
+                    INSERT FUN ICONS HERE EX PIANO, GAMES AND MORE!
+                  </p>
+                </div>
+              </div> -->
+      </div>
      
-    </div>
-
-<!-- DIVIDER ONE -->
-    <div class = "divider-one"></div>
-
-<!-- ABOUT ME -->
-
-<div class="media">
-    <img src="assets/jimmy!.jpg" class="align-self-center mr-3" alt="...">
-    <div class="media-body">
-      <h5 class="mt-0">About Me</h5>
-      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-      <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-    </div>
-  </div>
-
-  <!-- DIVIDER TWO -->
-  <div class = "divider-one"></div>
-
-  <!-- PROJECTS -->
-
-  <div class="row row-cols-1 row-cols-md-2">
-    <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- DIVIDER THREE -->
-  <div class = "divider-one"></div>
-
-      <!-- FOOTER -->
-      <div class="fixed-bottom">
-      <ul class="list-group list-group-horizontal-md">
-        <li class="list-group-item">Home</li>
-        <li class="list-group-item">About Me</li>
-        <li class="list-group-item">Projects</li>
-        <li class="list-group-item">Links</li>
-        <li class="list-group-item">Contact Me</li>
-      </ul>
-      </div>
-
+    <!-- DIVIDER TWO -->
     
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <!-- PROJECTS -->
+
+    <div class="divider" id="projects">
+      <h1 class="portfolio-label">My Projects</h1>
+      <p class="portfolio-text">Here is my portfolio showing my skills using such languages such as HTML, CSS and JavaScript to create fully functional applications and designs.</p>
+    </div>
+
+    <div class="row">
+      <div class="col mb-3">
+        <div class="card">
+          <a href="https://aaronmilolarsen.github.io/StaticLayout/" target="_blank">
+          <img src="assets/Hulu.JPG" class="card-img-top" alt="..." width="auto" height="300px">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Hulu Recreation</h5>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card">
+          <img src="assets/CSSKirby.JPG" class="card-img-top" alt="..." width="auto" height="300px">
+          <a href="https://codepen.io/MiloExplosion/pen/QWNyqWB" target="_blank">
+          <div class="card-img-overlay">
+            <h5 class="card-title">CSS Art: Kirby</h5>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card">
+          
+          <img src="assets/API1.JPG" class="card-img-top" alt="..." width="auto" height="300px">
+          <a href="https://aaronmilolarsen.github.io/APIProject1/" target="_blank" >
+          <div class="card-img-overlay">
+            <h5 class="card-title">COVID-19 API Project</h5>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card">
+          <img src="assets/API2.JPG" class="card-img-top" alt="..." width="auto" height="300px">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Holiday Search Project</h5>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIVIDER THREE -->
+   
+    <!-- INFORMATION AND CONTACT -->
+    
+      <div class="container-fluid" id="contacts">
+        <div class="row">
+          <div class="col-6" id="links">
+            <h2>Links!</h2>
+            <div class="link-one">
+              <a href="https://www.linkedin.com/in/aaronlarsen88123/" class="btn btn-primary btn-lg active" role="button"
+                aria-pressed="true" id="linkedin-button" target="_blank">LinkedIN</a>
+                <p class="link-one-text">Click above to take a look at my profressional LinkedIn page</p>
+            </div>
+            <div class="link-two">
+              <a href="https://github.com/AaronMiloLarsen" class="btn btn-primary btn-lg active" role="button"
+                aria-pressed="true" id="github-button" target="_blank">GitHub</a>
+                <p class="link-two-text">Click above to see my GitHub page with all my projects included.</p>
+            </div>
+            <div class="link-three">
+              <a href="assets/Aaron-Larsen-Resume.pdf" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" download id="resume-button">Download Resume</a>
+              <p class="link-three-text">Click above to download my resume.</p>
+            </div>
+      
+          </div>
+          <div class="col-6" id="contact-me">
+            <h2>Contact Me!</h2>
+            <p class="contact-me-text">To get in touch with me just insert your email and a message and I will get back to you shortly.</p>
+            <form action="https://formspree.io/f/mjvpklze" method="POST">
+              <div class="form-group">
+                <label>
+                  Your email:
+                  <input type="text" name="_replyto" class="form-control" id="exampleFormControlInput1"
+                    placeholder="name@example.com" size="50">
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  Your message:
+                  <input type="textarea" size="50" height="200px" name="message" class="form-control" id="exampleFormControlTextarea1"  placeholder="your message here..." ></input>
+                </label>
+              </div>
+          
+              <!-- your other form fields go here -->
+          
+              <button type="submit" id="send-button" >Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- FOOTER -->
+    <div class="fixed-bottom">
+      <ul class="list-group list-group-horizontal-md">
+        <a href="#half-circle" style="text-decoration: none;"> <li class="list-group-item" type="button">Home</li></a>
+        <a href="#about-me-container" style="text-decoration: none;"><li class="list-group-item">About Me</li></a>
+        <a href="#projects" style="text-decoration: none;"><li class="list-group-item">Projects</li></a>
+        <a href="#contacts" style="text-decoration: none;"><li class="list-group-item">Links</li></a>
+        <a href="#contacts" style="text-decoration: none;"><li class="list-group-item">Contact Me</li></a>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="footer-text">Copyright &#169; Aaron Larsen 2020</p>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  
+  <script src="./script.js"></script>
 </body>
+
 </html>

@@ -1,46 +1,472 @@
+/* BODY */
+
+html body {
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+}
 
 
+/* WRAPPER */
+.wrapper {
+    background-image: url(./assets/woodfloor.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* padding-top: 50px; */
 
-
+}
 
 /* TOP CONTAINER */
 .top-container {
-    background-color: teal;
+    
+    padding-bottom: 15rem;
+    width: 100vw;
+    height:500px;
+    justify-content: center;
 }
 #half-circle {
-        height:500px;
-        width:1000px;
-        border-radius: 0 0 600px 600px;
-        background: black;
-        margin-left: auto;
-        margin-right: auto;
+    height:500px;
+    width:1000px;
+    border-radius: 0 0 600px 600px;
+    background: #153e5c;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 50px 50px whitesmoke;
 }
 
-.display-4{
-    z-index: 9;
+/* TOP BUTTON - VIDEO - BUTTON SECTION*/    
+.b-v-b {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.about-me-button {
+    background-color: #cdd4ca;
+    width:125px;
+    height: 125px;
+    border-radius: 65px 65px 65px 65px;
+    border: 5px solid #f2be54 ;
+    margin-top: 150px;
+    /* margin-right: 100px; */
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+.about-me-button:hover {
+    background-color: #f0e68cEE;
+    border:5px solid #87aeb4;
 }
 
 .embed-responsive-item{
     margin: auto;
     display: block;
+
 }
 
-/* DIVIDER ONE*/
-.divider-one {
-    height:3rem;
-    width: 100vw;
-    background: tomato;
+.projects-button {
+    background-color: #cdd4ca;
+    width:125px;
+    height: 125px;
+    border-radius: 65px 65px 65px 65px;
+    border: 5px solid #f2be54 ;
+    margin-top: 150px;
+    padding: 30px 30px 30px 20px;
+    text-align: center;
 }
+
+.projects-button:hover {
+    background-color: #f0e68cEE;
+    border:5px solid #87aeb4;
+}
+
+/* BUTTON - BUTTON ROW */
+
+.b-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.links-button {
+    background-color: #cdd4ca;
+    width:125px;
+    height: 125px;
+    border-radius: 65px 65px 65px 65px;
+    border: 5px solid #f2be54 ;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    flex-grow: 0;
+}
+
+.links-button:hover {
+    background-color: #f0e68cEE;
+    border:5px solid #87aeb4;
+}
+
+.spacer-one {
+    background-color: transparent;
+    width:300px;
+    height: 125px;
+    border-radius: 65px 65px 65px 65px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    flex-grow: 0;
+}
+
+
+
+.contact-me-button {
+    background-color: #cdd4ca;
+    width:125px;
+    height: 125px;
+    border-radius: 65px 65px 65px 65px;
+    border: 5px solid #f2be54 ;
+    padding: 30px 30px 30px 20px;
+    text-align: center;
+    flex-grow: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contact-me-button:hover {
+    background-color: #f0e68cEE;
+    border:5px solid #87aeb4;
+}
+
+.top-buttons {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color:#153e5c;
+    text-decoration: none;
+    
+}
+
+/* TITLE AREA */
+#aaron-larsen {
+    z-index: 9;
+    text-align: center;
+    padding-top: 9rem;
+    color: white;
+    text-shadow: 3px 3px black;
+
+}
+
+  /* SWITCH EXPERIMENT TOGGLE */
+
+  .switch {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 400px;
+    z-index: 1000;
+
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 266px;
+    height: 400px;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1650px;
+    height: 400px;
+    background-color:khaki;
+    -webkit-transition: .4s;
+    transition: 1.0s;
+    padding-right:20px;
+    padding-left: 20px;
+    opacity: 1;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 400px;
+    width: 266px;
+    top: 0;
+    right: 0;
+    left: 1000;
+    bottom: 0;
+    background-image: url(assets/dapperAaron.jpg);
+    background-size: contain;
+    border:2px solid black;
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+    
+  }
+  
+  input:checked + .slider {
+    background-color: khaki;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(-1385px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 200px 200px 200px 200px;
+  }
+  
+  .slider.round:before {
+    border-radius: 200px 200px 200px 200px;
+  }
 
 /* ABOUT ME */
 
+#about-me-container {
+    background-color:#153e5cCC;
+    width: 100vw;
+    height: 500px;
+    margin-top: 400px;
+    padding: 50px 40px 20px 40px;
+    text-align: center;
+    opacity: 1;
 
-/* DIVIDER TWO*/
+}
 
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+#about-me-container .slider.round {
+    opacity: 1;
+}
+
+/* .switch .checkbox .slider {
+    opacity: 1;
+} */
+.media {
+    background-color: khaki;
+    height:400px;
+    max-height: max-content;
+    border-radius: 200px 200px 200px 200px;
+    z-index: -1000;
+}
+
+.mr-3{
+    height:400px;
+    width:auto;
+    border-radius: 200px 200px 200px 200px;
+}
+
+.about-text {
+    font-size: 1.7rem;
+    font-weight: 50;
+}
+
+.media-body {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 230px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.icons {
+    text-align: center;
+    
+
+}
+
+svg {
+    margin-left: 50px;
+
+}
+
+/* PORTFOLIO INTRO */
+
+/* COLOR PALETTE */
+
+/* yellow: #f2be54 
+   Grey: #cdd4ca
+   Teal: #87aeb4
+   Blue: #153e5c
+   Dark: #191a1d */
+
+.divider {
+    text-align: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.40);
+    
+    padding-top: 50px;
+    padding-bottom:20px;
+}
+
+.portfolio-text {
+    font-size: 1.7rem;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+.label {
+    text-align:center;
+}
+
+/* PROJECTS */
+
+.col {
+    background-color: rgba(0, 0, 0, 0.40);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left:20px;
+    padding-right:20px;
+    
+}
+
+.row {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+/* .card-img-top {
+    
+} */
+
+
+.card-img-overlay {
+    text-align: center;
+    opacity: 0;
+    
+}
+
+.card-img-overlay:hover {
+    opacity:1;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: 1000ms;
+    background-color: rgba(0, 0, 0, 0.60);
+    color:white;
+    border: 20px solid #87aeb4;
+    /* border-radius: 200px 200px 200px 200px; */
+
+   
+}
+
+.card {
+    border: 10px solid white;
+    background: transparent;
+    
+}
+
+.card img {
+    /* border-radius: 200px 200px 200px 200px; */
+}
+
+h5 {
+    font-size: 1.7rem;
+}
+
+.card-title {
+    padding-top:60px;
+}
+
+/* CONTACT ME AND INFO! */
+
+#contacts {
+    width: 100vw;
+    height: 600px;
+    text-align: center;
+    padding:50px 50px 50px 50px;
+    color: black;
+    background-color: #153e5cCC;
+    
+}
+
+#contacts #links {
+    background-color: #87aeb4;
+    padding:50px 20px 20px 20px;
+    border-radius: 200px 0px 0px 200px;
+    border-right: 10px solid black;
+    font-size: 1.3rem;
+    font-weight: 100;
+
+}
+.link-one {
+    margin-top:40px;
+    
+}
+
+#linkedin-button {
+    background: #cdd4ca;
+    color: #153e5c;
+}
+
+.link-two {
+    margin-top: 20px;
+}
+
+#github-button {
+    background: #cdd4ca;
+    color: #153e5c;
+}
+
+.link-three {
+    margin-top: 20px;
+    margin-bottom:50px;
+}
+
+#resume-button {
+    background: #cdd4ca;
+    color: #153e5c;
+}
+
+#contacts #contact-me {
+    background-color: #f0e68c;
+    border-radius: 0px 200px 200px 0px;
+    padding:50px 20px 20px 20px;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+#send-button {
+    background-color: #cdd4ca;
+}
 
 /* FOOTER */
 
 .list-group-item {
-    background-color: transparent;
-    color:green;
+    background-color: #153e5c;
+    color:white;
+    text-decoration: none;
+}
+
+.list-group-item:hover {
+    background-color: khaki;
+    color:#153e5c;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color:white;
+    float: right;
+    padding: 5px;
+    margin-right:20px;
 }
